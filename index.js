@@ -1,5 +1,6 @@
-const inquirer = require('inquirer')
+const inquirer = require('inquirer');
 const fs = require('fs');
+const markdown = require ('./utils/generateMarkdown')
 
 inquirer
   .prompt([
@@ -32,11 +33,22 @@ inquirer
         type: 'input',
         message: 'what are the necessary dependencies you need to install?',
         name: 'install',
+        choices :[ "inquirer", "badmath"]
+      },
+      {
+        type: 'input',
+        message: 'GitHub username',
+        name: 'username'
+      },
+      {
+        type: 'input',
+        message: 'Email address',
+        name: 'address'
       },
   ])
   .then((answers)  => {
 
-       const htmlTemplate = `
+       const readMeTemplate = `
 # ${answers.title}
 
 
@@ -64,6 +76,10 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 - [License](#license)
 
+- [Tests](#tests)
+
+- [Questions](#questions)
+
 ## Installation
 What are the necessaty dependencies you need to install? Provide a step-by-step description of how to get the development environment running.
 ${answers.install}
@@ -90,8 +106,8 @@ The last section of a high-quality README file is the license. This lets other d
 🏆
 ## Badges
 ![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. 
-Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
+
+Check out the badges hosted by [shields.io](https://shields.io/). 
 
 ## Features
 If your project has a lot of features, list them here.
@@ -102,13 +118,21 @@ The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry
 
 ## Tests
 
+
+## Questions
+-  GitHub username :
+${answers.username}
+
+- Email adderss :
+${answers.address}
+
     
  `
 
 
 
 fs.writeFile( 
-    'Contributer.README.md', htmlTemplate,(answers),
+    'Contributer.README.md', readMeTemplate,(answers),
  (err) => {
  err ? console.error(err) : console.log('Generating README...');
  } )
