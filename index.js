@@ -8,21 +8,21 @@ inquirer
       message: 'What is your project title?',
       name: 'title',
     },
-    {
-      type: 'input',
-      message: 'What was your motivation?',
-      name: 'motivation',
-    },
-    {
-      type: 'input',
-      message: 'why did you build this project?',
-      name: 'project',
-    },
-    {
-        type: 'input',
-        message: 'what problems did it solve?',
-        name: 'solve',
-      },
+    // {
+    //   type: 'input',
+    //   message: 'What was your motivation?',
+    //   name: 'motivation',
+    // },
+    // {
+    //   type: 'input',
+    //   message: 'why did you build this project?',
+    //   name: 'project',
+    // },
+    // {
+    //     type: 'input',
+    //     message: 'what problems did it solve?',
+    //     name: 'solve',
+    //   },
       {
       type: 'input',
       message: 'what did you learn?',
@@ -56,11 +56,11 @@ inquirer
 ## Description
 Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 - What was your motivation? 
-${answers.motivation}
+ ${answers.motivation}
 - Why did you build this project?
 ${answers.project}
 - What problem does it solve?
-${answers.solve}
+ ${answers.solve}
 - What did you learn?
 ${answers.learn}
 
