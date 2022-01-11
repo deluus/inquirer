@@ -8,21 +8,21 @@ inquirer
       message: 'What is your project title?',
       name: 'title',
     },
-    // {
-    //   type: 'input',
-    //   message: 'What was your motivation?',
-    //   name: 'motivation',
-    // },
-    // {
-    //   type: 'input',
-    //   message: 'why did you build this project?',
-    //   name: 'project',
-    // },
-    // {
-    //     type: 'input',
-    //     message: 'what problems did it solve?',
-    //     name: 'solve',
-    //   },
+    {
+      type: 'input',
+      message: 'What was your motivation?',
+      name: 'motivation',
+    },
+    {
+      type: 'input',
+      message: 'why did you build this project?',
+      name: 'project',
+    },
+    {
+        type: 'input',
+        message: 'what problems did it solve?',
+        name: 'solve',
+      },
       {
       type: 'input',
       message: 'what did you learn?',
@@ -116,13 +116,21 @@ If you created an application or package and would like other developers to cont
 The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
 
 ## Tests
+-
+-
+-
 
 
+## Questions
 ## Contacts
+
+
 -  GitHub username :
 ${answers.username}
 
-- Email adderss :
+
+
+-  Email adderss :
 ${answers.address}
 
     
