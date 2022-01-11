@@ -26,8 +26,8 @@ Include any other screenshots you deem necessary to help someone who has never b
 video:
 [![Watch the video]](https://watch.screencastify.com/v/N4Zw3Me4jeLEqyVPqqRI)
 
-
- ![demo](https://user-images.githubusercontent.com/91577221/148994315-def17c39-06d6-4a71-bf26-cffcb14c1236.gif )
+demo :
+![demo](https://user-images.githubusercontent.com/91577221/148994315-def17c39-06d6-4a71-bf26-cffcb14c1236.gif )
 
 
 screensshot :
