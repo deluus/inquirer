@@ -28,7 +28,7 @@ video:
 
 
 screensshot :
-![](HW9.png)
+![](./images/HW9.png)
 
 
 
