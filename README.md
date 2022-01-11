@@ -25,6 +25,7 @@ Include any other screenshots you deem necessary to help someone who has never b
 
 video:
  https://watch.screencastify.com/v/N4Zw3Me4jeLEqyVPqqRI
+ [![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/vt5fpE0bzSY)
 
 
 screensshot :
