@@ -24,9 +24,12 @@ Include a video of the typical user flow through your application. This includes
 Include any other screenshots you deem necessary to help someone who has never been introduced to your application understand the purpose and function of it. This is how you will communicate to potential employers or other developers in the future what you built and why, and to show how it works.
 
 video:
+ https://watch.screencastify.com/v/N4Zw3Me4jeLEqyVPqqRI
 
 
 screensshot :
+![](HW9.png)
+
 
 
 github:

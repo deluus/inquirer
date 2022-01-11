@@ -1,6 +1,5 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const markdown = require ('./utils/generateMarkdown')
 
 inquirer
   .prompt([
@@ -33,7 +32,7 @@ inquirer
         type: 'input',
         message: 'what are the necessary dependencies you need to install?',
         name: 'install',
-        choices :[ "inquirer", "badmath"]
+        choices : [ "inquirer", "badmath"]
       },
       {
         type: 'input',
@@ -78,7 +77,7 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 - [Tests](#tests)
 
-- [Questions](#questions)
+- [Contact](#Contact)
 
 ## Installation
 What are the necessaty dependencies you need to install? Provide a step-by-step description of how to get the development environment running.
@@ -119,7 +118,7 @@ The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry
 ## Tests
 
 
-## Questions
+## Contacts
 -  GitHub username :
 ${answers.username}
 
